@@ -12,7 +12,16 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: {
+        'animate-mouth': 'mouthAnimation 1s infinite',
+      },
+      keyframes: {
+        mouthAnimation: {
+          '0%, 100%': { transform: 'scaleY(1)' },
+          '50%': { transform: 'scaleY(0.5)' },
+        },
+      },
     },
   },
   plugins: [],
-} satisfies Config;
+} satisfies Config; 
